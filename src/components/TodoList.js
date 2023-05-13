@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import TodoFrom from './TodoFrom'
 import Todo from './Todo'
-function TodoList() {
+function TodoList(a) {
 
     const [todos, setTodos] = useState([])
 
@@ -73,7 +73,7 @@ function TodoList() {
     
 return (
     <div>
-        <h1>What is the plan for Today ?</h1>
+        <h1>{a.h1}</h1>
         <TodoFrom onSubmit={addTodo}/>
         {/* <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} editTodo={editTodo}/>  */}
         <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo}/> 
