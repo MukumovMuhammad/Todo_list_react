@@ -2,7 +2,7 @@
 import './App.css';
 
 
-import TodoFrom from './components/TodoFrom';
+
 import TodoList from './components/TodoList';
 
 function App() {
